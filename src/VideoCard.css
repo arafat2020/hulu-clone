@@ -1,0 +1,49 @@
+.videocard{
+    display: initial !important;
+    color: white;
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    transition: transform 100ms;
+}
+.videocard:hover{
+    transform: scale(1.09);
+}
+.videocard img{
+    height: 300px;
+    object-fit: contain;
+    width: 500px;
+}
+.videocard p{
+    margin: 0;
+    padding: 0;
+}
+.videocard h2{
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+}
+
+.card_state{
+    display:none
+}
+.card_state span{
+    font-size: 30px !important;
+}
+.videocard:hover .card_state{
+    display: inline;
+}
+@media (min-width:320px) and (max-width:565px){
+    .videocard {
+        width: 300px;
+        height: 320px;
+    }
+    .videocard img{
+        height: 250px;
+        object-fit: contain;
+        width: 300px;
+    }
+    .videocard:hover{
+        transform: scale(1);
+    }
+}
